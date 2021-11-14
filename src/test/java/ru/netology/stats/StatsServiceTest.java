@@ -10,7 +10,7 @@ class StatsServiceTest {
     void shouldCalculateSum() {
         StatsService service = new StatsService();
         int[] managerSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 180;
+        int expected = 181;
 
         int actual = service.calculateSum(managerSales);
 
@@ -21,7 +21,7 @@ class StatsServiceTest {
     void shouldFindAverage() {
         StatsService service = new StatsService();
         int[] managerSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 15;
+        int expected = 151;
 
         int actual = service.findAverage(managerSales);
 
@@ -32,7 +32,7 @@ class StatsServiceTest {
     void shouldFindMax() {
         StatsService service = new StatsService();
         int[] managerSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 20;
+        int expected = 201;
 
         int actual = service.findMaxSale(managerSales);
 
@@ -43,7 +43,7 @@ class StatsServiceTest {
     void shouldFindMin() {
         StatsService service = new StatsService();
         int[] managerSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 7;
+        int expected = 71;
 
         int actual = service.findMinSale(managerSales);
 
@@ -54,7 +54,7 @@ class StatsServiceTest {
     void shouldFindMonthMinAverage() {
         StatsService service = new StatsService();
         int[] managerSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 5;
+        int expected = 51;
 
         int actual = service.findMinAverage(managerSales);
 
@@ -65,7 +65,7 @@ class StatsServiceTest {
     void shouldFindMonthMoreAverage() {
         StatsService service = new StatsService();
         int[] managerSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 5;
+        int expected = 51;
 
         int actual = service.findMoreAverage(managerSales);
 
